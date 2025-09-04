@@ -1,5 +1,5 @@
 # URL Shortener
-A web app which takes a valid URL from a user and gives a working shortened URL. the shortened URL redirects to original URL
+A web app which takes a valid URL from a user and gives a working shortened URL. the original URL is stored in a DataBase with its shortened URL. when user clicks/searchs this shortened URL the http request redirects to original URL
 
 ## Getting started
 ### `git clone https://github.com/Varun04-pixel/URL-shortener`

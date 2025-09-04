@@ -17,4 +17,12 @@ button.addEventListener('click', async () => {
     console.log(result)
     shortenedURLbox.style.display = 'flex'
     shortenedURL.value = result.shortenID;
-})
+    shortenedURL.style='color: #0D6EFD; text-decoration: underline; cursor: pointer;';
+});
+
+shortenedURL.addEventListener("click", () => {
+    const url = shortenedURL.value;
+    if (url) {
+      window.open(url, "_blank");
+    }
+});

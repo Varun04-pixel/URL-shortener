@@ -5,6 +5,8 @@ A simple and efficient URL Shortener web application that converts long URLs int
 ## Live Demo
 [URL Shortener](https://url-outr.onrender.com/)
 
+![Preview Screenshot](./public/Screenshot99.png)
+
 ## Features
 
 -  Shorten long URLs instantly

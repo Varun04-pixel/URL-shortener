@@ -1,12 +1,64 @@
-# URL Shortener
-A web app which takes a valid URL from a user and gives a working shortened URL. the original URL is stored in a DataBase with its shortened URL. when user clicks/searchs this shortened URL the http request redirects to original URL
+## 🔗 URL Shortener
 
-## Getting started
-### `git clone https://github.com/Varun04-pixel/URL-shortener`
-### `npm i`
-to install dependencies
-### `create a .env file and store your DB connection string`
-Example :  `DB_pass = mongodb+srv://User Name:<db_password>@User.idpgx43.mongodb.net/?retryWrites=true&w=majority&appName=Name`
-if dont have one visit [mongodb.com](https://www.mongodb.com/) - create a cluster - connect - copy the connection string - assign it to DB_pass
-### `nodemon index.js`
-runs the application on [localhost:3000](https://localhost:3000)
+A simple and efficient URL Shortener web application that converts long URLs into short, shareable links.
+
+## Live Demo
+[URL Shortener](https://url-outr.onrender.com/)
+
+## Features
+
+-  Shorten long URLs instantly
+-  Fast redirection to original URLs
+-  Clean and minimal UI
+-  Persistent storage
+-  Deployed on Render
+
+## 🛠️ Tech Stack
+
+### Frontend
+- HTML
+- CSS (Bootstrap)
+- JavaScript
+
+### Backend
+- Node.js
+- Express.js
+
+### Deployment
+- Render
+
+## 📂 Project Structure
+
+```text
+URL-shortener/
+│── public/ # Frontend files
+│── routes/ # API routes
+│── models/ # Database model
+│── server.js # Entry point
+│── package.json
+```
+
+## ⚙️ Installation & Setup
+
+###  Clone the repository
+```bash
+git clone https://github.com/Varun04-pixel/URL-shortener.git
+cd URL-shortener
+```
+###  Install dependencies
+```bash
+npm install
+```
+###  Run the server
+```bash
+npm start
+```
+###  Server will run on:
+```bash
+http://localhost:3000
+```
+###  Create a .env file in the root directory:
+```bash
+PORT=3000
+DB_pass = your_mongoDB_pass_key
+```

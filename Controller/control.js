@@ -3,12 +3,13 @@ import { nanoid } from "nanoid";
 
 export function urlPOST(req, res) {
     let {url} = req.body
+    let baseURL = `${req.protocol}://${req.get('host')}`
     let shortenID = nanoid(8)
     const newURL = DBmodel.create({
         originalURL: url,
         shortenID
     })
-    res.json({shortenID: `http://localhost:3000/${shortenID}`})
+    res.json({shortenID: `${baseURL}/${shortenID}`})
 }
 
 export async function urlGET(req, res) {

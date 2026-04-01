@@ -14,8 +14,8 @@
 </head>
 
 <body>
-    <h2 class="text-center text-primary mt-5">URL Shortner !!</h2>
-    <div class="border border-1 border-primary rounded m-5 p-5 w-50 mx-auto">
+    <h2 class="text-center text-light mt-5">URL Shortner !!</h2>
+    <div class="border border-1 border-light rounded m-5 p-5 w-50 mx-auto">
         <div class="input-group">
             <span class="input-group-text">Original URL</span>
             <input type="text" id="originalURL" placeholder="Enter the URL" class="form-control">
@@ -23,6 +23,8 @@
         <div class="input-group mt-3" id="shortenedURLbox">
             <span class="input-group-text">Shortened URL</span>
             <input type="text" id="shortenedURL" class="form-control" readonly>
+            <span title="copy to clipboard" class="input-group-text" id="copyURL"><img id="imageHide" width="20" height="20" src="https://img.icons8.com/ios/50/copy--v1.png" alt="copy--v1"/></span>
+            <!-- <span id="copyFeedback" class="bg-transparent"></span> -->
         </div>
         <button type="submit" id="btn" class="btn btn-primary mt-3">Shorten</button>
     </div>
